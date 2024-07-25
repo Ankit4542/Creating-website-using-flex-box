@@ -9,38 +9,68 @@ body{
     box-sizing: border-box;
 }
 
+html, body{
+    width:100%;
+    height:100%;
+}
+
+.main{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
 .navbar{
     width:100%;
     height:70px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); 
-    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     display: flex;
+    background-color: white;
     justify-content: space-between;
     align-items: center;
-    padding:2vw
+    padding:2vw;
 }
 
 .navbar h1 span{
-    color:#D14262;
+    color: brown;
 }
 .menu-options{
     list-style-type: none;
     display: flex;
+    text-decoration: none;
+    color:black;
+    align-items: center;
+    gap:3vw;
+    justify-content: space-evenly;
 }
 
 .menu-options li a{
-    padding:1.8vw;
-    text-decoration: none;
     color:black;
-    font-family: "Poppins", sans-serif;
-    font-size:1.2vw;
-    font-weight:600;
+    text-decoration:none;
+    font-weight: 500;
+}
+.menu-options li a:hover{
+    color:brown;
+}
+
+.navbar i{
+    display: none;
 }
 
 .header{
     width:100%;
-    height:100%;
+    height:calc(100% - 70px);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    position: relative;
+}
+
+.left{
+    height:100%;
+    align-items: center;
+    width:50%;
+}
+.right{
+    height:100%;
+    width: 50%;
 }
